@@ -91,7 +91,7 @@ ofstream  create_user_data_file() {
 	ofstream file;
 
 	// Opening file "Gfg.txt" in write mode.
-	file.open("user_data.txt");
+	file.open("user_data.txt",ios::app);
 
 	// Check if the file was successfully created.
 	if (!file.is_open())
